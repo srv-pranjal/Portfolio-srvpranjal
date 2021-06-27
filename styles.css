@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,700;1,200&display=swap");
 
+*{
+  margin: 0;
+  /* padding: 0; */
+}
 body {
   font-family: "Nunito Sans", sans-serif;
 }
@@ -17,9 +21,10 @@ a {
 }
 
 .link-primary {
-  margin: 0.5rem 0.5rem;
-  margin-left: 1rem;
+  /* margin: 2rem 0; */
+  margin-right: 1.5rem;
   color: rgba(255, 255, 255, 0.7);
+  font-size: 1.3rem;
   transition: color, font-size, 0.4s ease-in-out;
 }
 
@@ -45,7 +50,8 @@ hr {
   margin: 0.5rem;
 }
 .navbar {
-  background-color: #000;
+  /* background-color: cyan; */
+  /* margin-top: 400px 0; */
   padding: 2rem 0rem;
 }
 .navbar a:hover,
@@ -54,7 +60,7 @@ hr {
   color: #fff;
   position: relative;
   padding-bottom: 0.5rem;
-  font-size: 1.09rem;
+  font-size: 1.5rem;
 }
 .navbar .active::before,
 .navbar a:hover::before {
@@ -71,15 +77,15 @@ hr {
   text-align: center;
 }
 .social-links a {
-  height: 6vh;
-  width: 6vh;
+  height: 4vh;
+  width: 4vh;
   background-color: #e5e7eb;
   border-radius: 50%;
   margin: 0.3rem;
   /* box-shadow: 1px 4px 2px 2px #9CA3AF; */
 }
 .social-links a i {
-  margin-top: 0.9rem;
+  margin-top: 0.5rem;
   /* font-size: 1.4rem; */
   transition: all 0.4s linear;
 }
@@ -119,24 +125,28 @@ hr {
 }
 
 .header {
-  background: #3498db;
+  /* background: #3498db; */
   /* display: flex; */
   /* flex-direction: column; */
-  padding: 1rem 1rem;
+  padding: 1rem 10rem;
+  margin-top: 15%;
   /* align-items: center; */
+  height: 100vh;
 }
 .header h1 {
   font-size: 2.5rem;
   color: #fff;
   text-shadow: 0 2px 5px #000;
 }
-.header h2 {
+.header h3 {
+  margin-top: 0.6rem;
   font-weight: bolder;
+  color: #fff;
 }
-.header span{
-    color:blanchedalmond;
-    position: relative;
-    font-size: 1.8rem;
+.header span {
+  color: blanchedalmond;
+  position: relative;
+  font-size: 1.5rem;
 }
 .header span::before {
   content: "";
@@ -145,12 +155,24 @@ hr {
   bottom: 0;
   border-bottom: 4px solid #18d26b;
 }
-.section{
-    margin: auto;
-    text-align: center;
-    padding:1rem 0;
+.section {
+  margin: auto;
+  text-align: center;
+  padding: 1rem 0;
 }
-.section-off-white{
-    background-color: #BFDBFE;
-    width: 50vh;
+.section-off-white {
+  background-color: #bfdbfe;
+  width: 50vh;
+}
+.bg {
+  /* The image used */
+  background-image: url("https://images.unsplash.com/photo-1568750553381-8e9ce7756a8d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
 }
