@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,700;1,200&display=swap");
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+.container {
+  padding: 0rem 1rem;
+}
+
+.container-centered {
+  max-width: 600px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.link-primary {
+  margin: 0.5rem 0.5rem;
+  margin-left: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+  transition: color, font-size, 0.4s ease-in-out;
+}
+
+hr {
+  margin: 2rem;
+}
+
+.list-non-bullets {
+  list-style: none;
+}
+
+.list-big-bullets::marker {
+  /* content: "."; */
+  font-size: 4rem;
+  color: #18d26e;
+}
+.list-big-bullets {
+  margin: 0rem 1.5rem;
+  font-size: 2rem;
+}
+.list-item-inline {
+  display: inline;
+  margin: 0.5rem;
+}
+.navbar {
+  background-color: #000;
+  padding: 2rem 0rem;
+}
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus {
+  color: #fff;
+  position: relative;
+  padding-bottom: 0.5rem;
+  font-size: 1.09rem;
+}
+.navbar .active::before,
+.navbar a:hover::before {
+  content: "";
+  position: absolute;
+  width: 53%;
+  bottom: 0;
+  border-bottom: 4px solid #18d26b;
+}
+
+.social-links {
+  display: flex;
+  background-color: #000;
+  text-align: center;
+}
+.social-links a {
+  height: 6vh;
+  width: 6vh;
+  background-color: #e5e7eb;
+  border-radius: 50%;
+  margin: 0.3rem;
+  /* box-shadow: 1px 4px 2px 2px #9CA3AF; */
+}
+.social-links a i {
+  margin-top: 0.9rem;
+  /* font-size: 1.4rem; */
+  transition: all 0.4s linear;
+}
+.social-links a:hover > i {
+  font-size: 1.3rem;
+  color: #fff;
+}
+.social-links .twitter:hover {
+  background-color: #0097e6;
+}
+.social-links .facebook:hover {
+  background-color: #3b5999;
+}
+.social-links .instagram:hover {
+  background-color: #e4405f;
+}
+.social-links .linkedin:hover {
+  background-color: #0077b5;
+}
+.social-links .github:hover {
+  background-color: #6e5494;
+}
+.fa-twitter {
+  color: #0097e6;
+}
+.fa-facebook {
+  color: #3b5999;
+}
+.fa-instagram {
+  color: #e4405f;
+}
+.fa-linkedin {
+  color: #0077b5;
+}
+.fa-github {
+  color: #6e5494;
+}
+
+.header {
+  background: #3498db;
+  /* display: flex; */
+  /* flex-direction: column; */
+  padding: 1rem 1rem;
+  /* align-items: center; */
+}
+.header h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 0 2px 5px #000;
+}
+.header h2 {
+  font-weight: bolder;
+}
+.header span{
+    color:blanchedalmond;
+    position: relative;
+    font-size: 1.8rem;
+}
+.header span::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  border-bottom: 4px solid #18d26b;
+}
+.section{
+    margin: auto;
+    text-align: center;
+    padding:1rem 0;
+}
+.section-off-white{
+    background-color: #BFDBFE;
+    width: 50vh;
+}
