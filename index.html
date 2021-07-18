@@ -10,6 +10,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
     <!-- <script src="/typed.js"></script> -->
     <script src="/App.js"></script>
   </head>
@@ -17,9 +21,9 @@
     <!-- <a href="javascript:void(0);" class="bars" onclick="openMobileNav()">
       <i class="fa fa-bars"></i>
     </a> -->
-    <header id="home" class="header">
+    <header id="home">
       <h1>Pranjal Srivastava</h1>
-      <h3>I'm A <span class=".typed">Developer</span></h3>
+      <h3>I'm A <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">Developer</span></h3>
       <nav class="navbar">
         <a href="#home" class="link-primary active">Home</a>
         <a href="#secondary-nav-bar" class="link-primary" onclick="openAbout()">About</a>
@@ -46,7 +50,7 @@
       </div>
     </header>
     <div id="secondary-nav-bar" class="secondary-nav-bar">
-      <h1>Pranjal Srivastava</h1>
+      <span>Pranjal Srivastava</span>
       <nav class="navbar">
         <a href="#home" class="link-primary" onclick="openHome()">Home</a>
         <a href="#secondary-nav-bar" class="link-primary active">About</a>
@@ -69,23 +73,74 @@
           <div class="personal-info-box">
             <div class="personal-info-box-1">
               <ul class="list-non-bullets">
-                <li><span>></span><strong> &nbsp;Birthday:</strong> 11 May 2000</li>
-                <li><span>></span><strong> &nbsp;Website:</strong> www.srv-pranjal.netlify.app</li>
-                <li><span>></span><strong> &nbsp;Phone:</strong> +91 9454501112</li>
-                <li><span>></span><strong> &nbsp;City:</strong> Lucknow,India</li>
+                <li><span class="arrow">></span><strong> &nbsp;<span class="info-title">Birthday :</span>&nbsp;</strong> 11 May 2000</li>
+                <li><span class="arrow">></span><strong> &nbsp;<span class="info-title">Website :</span>&nbsp;</strong> www.srv-pranjal.netlify.app</li>
+                <li><span class="arrow">></span><strong> &nbsp;<span class="info-title">Phone :</span>&nbsp;</strong> +91 9454501112</li>
+                <li><span class="arrow">></span><strong> &nbsp;<span class="info-title">City :</span>&nbsp;</strong> Lucknow,India</li>
               </ul>
             </div>
             <div class="personal-info-box-2">
               <ul class="list-non-bullets">
-                <li><span>></span><strong> &nbsp;Age:</strong> 21</li>
-                <li><span>></span><strong> &nbsp;Degree:</strong> B. Tech</li>
-                <li><span>></span><strong> &nbsp;Email:</strong> prns366@gmail.com</li>
-                <li><span>></span><strong> &nbsp;Freelance:</strong> Available</li>
+                <li><span class="arrow">></span><strong> &nbsp;<span class="info-title">Age :</span>&nbsp;</strong> 21</li>
+                <li><span class="arrow">></span><strong> &nbsp;<span class="info-title">Degree :</span>&nbsp;</strong> B. Tech</li>
+                <li><span class="arrow">></span><strong> &nbsp;<span class="info-title">Email :</span>&nbsp;</strong> prns366@gmail.com</li>
+                <li><span class="arrow">></span><strong> &nbsp;<span class="info-title">Freelance :</span>&nbsp;</strong> Available</li>
               </ul>
             </div>
           </div>
       </div>
+      </div>
+      <div class="skills">
+        <h4>S K I L L S</h4>
+        <div class="skills-set">
+          <div class="skill-set-1">
+            <div class="skill-progress">
+              <span>C/C++</span>
+              <span style="float: right;">90%</span>
+              <div class="progress-bar"><div class="progress cplusplus"></div></div>
+            </div>
+            <div class="skill-progress">
+              <span>PYTHON</span>
+              <span style="float: right;">75%</span>
+              <div class="progress-bar"><div class="progress python"></div></div>
+            </div>
+            <div class="skill-progress">
+              <span>JAVA</span>
+              <span style="float: right;">90%</span>
+              <div class="progress-bar"><div class="progress cplusplus"></div></div>
+            </div>
+            <div class="skill-progress">
+              <span>ROBOTIC PROCESS AUTOMATION</span>
+              <span style="float: right;">70%</span>
+              <div class="progress-bar"><div class="progress rpa"></div></div>
+            </div>
+          </div>
+          <div class="skill-set-2">
+            <div class="skill-progress">
+              <span>HTML/CSS</span>
+              <span style="float: right;">90%</span>
+              <div class="progress-bar"><div class="progress cplusplus"></div></div>
+            </div>
+            <div class="skill-progress">
+              <span>JAVASCRIPT</span>
+              <span style="float: right;">80%</span>
+              <div class="progress-bar"><div class="progress js"></div></div>
+            </div>
+            <div class="skill-progress">
+              <span>REACTJS</span>
+              <span style="float: right;">75%</span>
+              <div class="progress-bar"><div class="progress python"></div></div>
+            </div>
+            <div class="skill-progress">
+              <span>MYSQL</span>
+              <span style="float: right;">90%</span>
+              <div class="progress-bar"><div class="progress cplusplus"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    
     <!-- <section  id="mobile-nav" class="section mobile-nav">
       <nav class="navbar">
         <a href="#home" class="link-primary active">Home</a>
