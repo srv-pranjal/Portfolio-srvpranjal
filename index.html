@@ -14,21 +14,39 @@
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
-    <!-- <script src="/typed.js"></script> -->
     <script src="/App.js"></script>
   </head>
   <body>
-    <!-- <a href="javascript:void(0);" class="bars" onclick="openMobileNav()">
+    <a href="javascript:void(0);" class="bars" onclick="openMobileNav()">
       <i class="fa fa-bars"></i>
-    </a> -->
+    </a>
     <header id="home">
       <h1>Pranjal Srivastava</h1>
-      <h3>I'm A <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">Developer</span></h3>
+      <h3>I'm A <span class="profession"></span></h3>
+      
+      <script src="typed.js"></script>
+      <script>
+        var typed = new Typed('.profession', {
+        strings: [
+          "Front End Developer",
+          "Competitive Programmer",
+          "RPA Developer"
+        ],
+        typeSpeed:70,
+        backSpeed:70,
+        backDelay: 1800,
+        loop:true,
+        // loopCount: 5,
+
+      });
+      </script>
+      
+      
       <nav class="navbar">
-        <a href="#home" class="link-primary active">Home</a>
+        <a href="#home" id="nav-home" class="link-primary active">Home</a>
         <a href="#secondary-nav-bar" class="link-primary" onclick="openAbout()">About</a>
-        <a href="#" class="link-primary" onclick="openProjects()">Projects</a>
-        <a href="#" class="link-primary" onclick="openResume()">Resume</a>
+        <a href="#secondary-nav-bar" class="link-primary" onclick="openProjects()">Projects</a>
+        <a href="#secondary-nav-bar" class="link-primary" onclick="openResume()">Resume</a>
         <a href="#" class="link-primary" onclick="openContact()">Contact</a>
       </nav>
       <div class="social-links">
@@ -37,13 +55,13 @@
         ><a class="instagram" href="#"><i class="fa fa-instagram"></i></a>
         <a
           class="linkedin"
-          href="#"
+          href="https://www.linkedin.com/in/pranjal-srivastava-5245381a9/"
           onclick='window.open("https://www.linkedin.com/in/pranjal-srivastava-5245381a9/");return false;'
           ><i class="fa fa-linkedin"></i
         ></a>
         <a
           class="github"
-          href="#"
+          href="https://github.com/srv-pranjal"
           onclick='window.open("https://github.com/srv-pranjal");return false;'
           ><i class="fa fa-github"></i
         ></a>
@@ -53,14 +71,14 @@
       <span>Pranjal Srivastava</span>
       <nav class="navbar">
         <a href="#home" class="link-primary" onclick="openHome()">Home</a>
-        <a href="#secondary-nav-bar" class="link-primary active">About</a>
-        <a href="#secondary-nav-bar" class="link-primary">Projects</a>
-        <a href="#secondary-nav-bar" class="link-primary">Resume</a>
-        <a href="#secondary-nav-bar" class="link-primary">Contact</a>
+        <a href="#secondary-nav-bar" id="nav-about" class="link-primary active" onclick="openAbout()">About</a>
+        <a href="#secondary-nav-bar" id="nav-projects" class="link-primary" onclick="openProjects()">Projects</a>
+        <a href="#secondary-nav-bar" id="nav-resume" class="link-primary" onclick="openResume()">Resume</a>
+        <a href="#secondary-nav-bar" id="nav-contact" class="link-primary" onclick="openContact()">Contact</a>
       </nav>
     </div>
     <section id="about" class="section about">
-      <h4>A B O U T</h4>
+      <h4 class="section-title">A B O U T</h4>
       <h1>LEARN MORE ABOUT ME</h1>
       <div class="about-me">
         <div class="pic-container">
@@ -91,7 +109,7 @@
       </div>
       </div>
       <div class="skills">
-        <h4>S K I L L S</h4>
+        <h4 class="section-title">S K I L L S</h4>
         <div class="skills-set">
           <div class="skill-set-1">
             <div class="skill-progress">
@@ -150,5 +168,71 @@
         <a href="#" class="link-primary" onclick="openContact()">Contact</a>
       </nav>
     </section> -->
+    <section id="resume" class="section resume">
+      <h4 class="section-title">R E S U M E</h4>
+      <h1>CHECK MY RESUME</h1>
+      <div class="resume-items-container">
+        <div class="resume-item">
+          <h2 class="resume-content-title">Summary</h2>
+        <div class="resume-content-box">
+          <h3 class="content-box-title">Pranjal Srivastava</h3>
+          <p>Front End Developer || Competitive Programmer || RPA Developer</p>
+          <ul>
+            <li>Lucknow, INDIA</li>
+            <li>+91 9454501112</li>
+            <li>prns366@gmail.com</li>
+          </ul>
+        </div>
+        <h2 class="resume-content-title">Education</h2>
+        <div class="resume-content-box">
+          <h3 class="content-box-title">B. Tech, School of Computer Engineering</h3>
+          <p class="duration">07/2018 - Present</p>
+          <p>KIIT Deemed University, Bhubaneswar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9.19 CGPA</p>
+        </div>
+        <div class="resume-content-box">
+          <h3 class="content-box-title">Senior Secondary (ICSE), Science</h3>
+          <p class="duration">04/2016 - 04/2018</p>
+          <p>St. Dominic Savio College, Lucknow&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;90.4%</p>
+        </div>
+        <div class="resume-content-box">
+          <h3 class="content-box-title">Secondary School</h3>
+          <p class="duration">04/2014 - 04/2016</p>
+          <p>St. Dominic Savio College, Lucknow&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;90.6%</p>
+        </div>
+      </div>
+
+      <div class="resume-item">
+        <h2 class="resume-content-title">Professional Experience</h2>
+        <div class="resume-content-box">
+          <h3 class="content-box-title">H2H Intern</h3>
+          <p class="duration">01/2021 - 03/2021</p>
+          <p>HighRadius Corp.</p>
+        </div>
+        <div class="resume-content-box">
+          <h3 class="content-box-title">RPA Development Intern</h3>
+          <p class="duration">10/2020 - 01/2021</p>
+          <p>SmartMegh Solutions Pvt. Ltd.</p>
+        </div>
+        <h2 class="resume-content-title">Training & Certifications</h2>
+        <div class="resume-content-box">
+          <h3 class="content-box-title">Mastering Data Structures and Algorithms</h3>
+          <p>Online Course offered by UDEMY which covered all the basics topics of Data Structures.</p>
+        </div>
+        <div class="resume-content-box">
+          <h3 class="content-box-title">The Complete Web Developer Course 2.0</h3>
+          <p>Online course offered by UDEMY that covers all the basics of Web Development including
+            HTML,CSS,Javascript,JQuery,Bootstrap 4,PHP and MySQL databases.</p>
+        </div>
+        <div class="resume-content-box">
+          <h3 class="content-box-title">Hackerrank Certifications</h3>
+          <p>Checkout my Hackerrank Certifications 👉 &nbsp;<a class="link-primary active" href="https://www.hackerrank.com/prns366" onclick='window.open("https://www.hackerrank.com/prns366");return false;'>Here </a>
+          </p>
+        </div>
+    </div>
+      </div>
+    </section>
+
+    <section id="projects"></section>
+    <section id="contact"></section>
   </body>
 </html>
