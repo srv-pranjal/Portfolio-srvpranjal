@@ -44,10 +44,10 @@
       
       <nav class="navbar">
         <a href="#home" id="nav-home" class="link-primary active">Home</a>
-        <a href="#secondary-nav-bar" class="link-primary" onclick="openAbout()">About</a>
-        <a href="#secondary-nav-bar" class="link-primary" onclick="openProjects()">Projects</a>
-        <a href="#secondary-nav-bar" class="link-primary" onclick="openResume()">Resume</a>
-        <a href="#" class="link-primary" onclick="openContact()">Contact</a>
+        <a href="#secondary-nav-bar" class="link-primary" onclick="openPage('about','nav-about')">About</a>
+        <a href="#secondary-nav-bar" class="link-primary" onclick="openPage('projects','nav-projects')">Projects</a>
+        <a href="#secondary-nav-bar" class="link-primary" onclick="openPage('resume','nav-resume')">Resume</a>
+        <a href="#secondary-nav-bar" class="link-primary" onclick="openPage('contact','nav-contact')">Contact</a>
       </nav>
       <div class="social-links">
         <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
@@ -69,12 +69,12 @@
     </header>
     <div id="secondary-nav-bar" class="secondary-nav-bar">
       <span>Pranjal Srivastava</span>
-      <nav class="navbar">
-        <a href="#home" class="link-primary" onclick="openHome()">Home</a>
-        <a href="#secondary-nav-bar" id="nav-about" class="link-primary active" onclick="openAbout()">About</a>
-        <a href="#secondary-nav-bar" id="nav-projects" class="link-primary" onclick="openProjects()">Projects</a>
-        <a href="#secondary-nav-bar" id="nav-resume" class="link-primary" onclick="openResume()">Resume</a>
-        <a href="#secondary-nav-bar" id="nav-contact" class="link-primary" onclick="openContact()">Contact</a>
+      <nav id="nav" class="navbar">
+        <a href="#home" class="link-primary" onclick="openPage('home','nav-home')">Home</a>
+        <a href="#secondary-nav-bar" id="nav-about" class="link-primary active" onclick="openPage('about',id)">About</a>
+        <a href="#secondary-nav-bar" id="nav-projects" class="link-primary" onclick="openPage('projects',id)">Projects</a>
+        <a href="#secondary-nav-bar" id="nav-resume" class="link-primary" onclick="openPage('resume',id)">Resume</a>
+        <a href="#secondary-nav-bar" id="nav-contact" class="link-primary" onclick="openPage('contact',id)">Contact</a>
       </nav>
     </div>
     <section id="about" class="section about">
@@ -159,15 +159,15 @@
       </div>
     </section>
     
-    <!-- <section  id="mobile-nav" class="section mobile-nav">
+    <section  id="mobile-nav" class="section mobile-nav">
       <nav class="navbar">
-        <a href="#home" class="link-primary active">Home</a>
-        <a href="#secondary-nav-bar" class="link-primary" onclick="openAbout()">About</a>
-        <a href="#" class="link-primary" onclick="openProjects()">Projects</a>
-        <a href="#" class="link-primary" onclick="openResume()">Resume</a>
-        <a href="#" class="link-primary" onclick="openContact()">Contact</a>
+        <a href="#home" id="mobile-nav-home" class="link-primary active" onclick="openPage('home',id)">Home</a>
+        <a href="#secondary-nav-bar" id="mobile-nav-about" class="link-primary" onclick="openPage('about',id)">About</a>
+        <a href="#secondary-nav-bar" id="mobile-nav-projects" class="link-primary" onclick="openPage('projects',id)">Projects</a>
+        <a href="#secondary-nav-bar" id="mobile-nav-resume" class="link-primary" onclick="openPage('resume',id)">Resume</a>
+        <a href="#secondary-nav-bar" id="mobile-nav-contact" class="link-primary" onclick="openPage('contact',id)">Contact</a>
       </nav>
-    </section> -->
+    </section>
     <section id="resume" class="section resume">
       <h4 class="section-title">R E S U M E</h4>
       <h1>CHECK MY RESUME</h1>
@@ -221,11 +221,11 @@
         <div class="resume-content-box">
           <h3 class="content-box-title">The Complete Web Developer Course 2.0</h3>
           <p>Online course offered by UDEMY that covers all the basics of Web Development including
-            HTML,CSS,Javascript,JQuery,Bootstrap 4,PHP and MySQL databases.</p>
+            HTML, CSS, Javascript, JQuery, Bootstrap 4, PHP and MySQL databases.</p>
         </div>
         <div class="resume-content-box">
           <h3 class="content-box-title">Hackerrank Certifications</h3>
-          <p>Checkout my Hackerrank Certifications 👉 &nbsp;<a class="link-primary active" href="https://www.hackerrank.com/prns366" onclick='window.open("https://www.hackerrank.com/prns366");return false;'>Here </a>
+          <p>Checkout my Hackerrank Certifications 👉 &nbsp;<a href="https://www.hackerrank.com/prns366" onclick='window.open("https://www.hackerrank.com/prns366");return false;'>Here </a>
           </p>
         </div>
     </div>
@@ -233,6 +233,65 @@
     </section>
 
     <section id="projects"></section>
-    <section id="contact"></section>
+    <section id="contact" class="contact section">
+      <h4 class="section-title">C O N T A C T</h4>
+      <h1>CONTACT ME</h1>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="contact-content-box">
+            <div class="icon"><i class="fa fa-map-marker"></i></div>
+            <h3>My Address</h3>
+            <p>Gomti Nagar, Lucknow</p>
+          </div>
+            <div class="contact-content-box">
+              <div class="icon"><i class="fa fa-envelope-o"></i></div>
+              <h3>Email Me</h3>
+              <p>prns366@gmail.com</p>
+            </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-content-box">
+            <div class="icon"><i class="fa fa-share-alt"></i></div>
+            <h3>Social Profiles</h3>
+            <div class="social-links">
+              <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+              <a class="facebook" href="#"><i class="fa fa-facebook"></i></a
+              ><a class="instagram" href="#"><i class="fa fa-instagram"></i></a>
+              <a
+                class="linkedin"
+                href="https://www.linkedin.com/in/pranjal-srivastava-5245381a9/"
+                onclick='window.open("https://www.linkedin.com/in/pranjal-srivastava-5245381a9/");return false;'
+                ><i class="fa fa-linkedin"></i
+              ></a>
+              <a
+                class="github"
+                href="https://github.com/srv-pranjal"
+                onclick='window.open("https://github.com/srv-pranjal");return false;'
+                ><i class="fa fa-github"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-content-box">
+            <div class="icon"><i class="fa fa-phone"></i></div>
+            <h3>Call Me</h3>
+            <p>+91 9454501112</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-content-box form">
+        <form action="/" method="post">
+          <div class="user-details">
+              <input type="text" class="form-text" name="name" id="name" placeholder="Your Name" required>
+              <input type="email" class="form-text" name="email" id="email" placeholder="Your Email" required>
+          </div>
+          <input type="text" class="form-text" name="subject" id="subject" placeholder="Subject" required>
+          <textarea class="form-text" name="message" rows="5" placeholder="Message" required></textarea>
+          <!-- <button type="submit">Submit</button> -->
+          <span class="submit">Submit</span>
+        </form>
+      </div>
+      
+    </section>
   </body>
 </html>
