@@ -10,44 +10,64 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="images/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
     <script src="/App.js"></script>
   </head>
   <body>
-    <a href="javascript:void(0);" class="bars" onclick="openMobileNav()">
+    <a class="bars" onclick="openMobileNav()">
       <i class="fa fa-bars"></i>
     </a>
     <header id="home">
       <h1>Pranjal Srivastava</h1>
       <h3>I'm A <span class="profession"></span></h3>
-      
+
       <script src="typed.js"></script>
       <script>
-        var typed = new Typed('.profession', {
-        strings: [
-          "Front End Developer",
-          "Competitive Programmer",
-          "RPA Developer"
-        ],
-        typeSpeed:70,
-        backSpeed:70,
-        backDelay: 1800,
-        loop:true,
-        // loopCount: 5,
-
-      });
+        var typed = new Typed(".profession", {
+          strings: [
+            "Front End Developer",
+            "Competitive Programmer",
+            "RPA Developer",
+          ],
+          typeSpeed: 70,
+          backSpeed: 70,
+          backDelay: 1800,
+          loop: true,
+          // loopCount: 5,
+        });
       </script>
-      
-      
+
       <nav class="navbar">
-        <a href="#home" id="nav-home" class="link-primary active">Home</a>
-        <a href="#secondary-nav-bar" class="link-primary" onclick="openPage('about','nav-about')">About</a>
-        <a href="#secondary-nav-bar" class="link-primary" onclick="openPage('projects','nav-projects')">Projects</a>
-        <a href="#secondary-nav-bar" class="link-primary" onclick="openPage('resume','nav-resume')">Resume</a>
-        <a href="#secondary-nav-bar" class="link-primary" onclick="openPage('contact','nav-contact')">Contact</a>
+        <a id="nav-home" class="link-primary active">Home</a>
+        <a class="link-primary" onclick="openPage('about','nav-about')"
+          >About</a
+        >
+        <a class="link-primary" onclick="openPage('projects','nav-projects')"
+          >Projects</a
+        >
+        <a class="link-primary" onclick="openPage('resume','nav-resume')"
+          >Resume</a
+        >
+        <a class="link-primary" onclick="openPage('contact','nav-contact')"
+          >Contact</a
+        >
       </nav>
       <div class="social-links">
         <a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
@@ -70,11 +90,28 @@
     <div id="secondary-nav-bar" class="secondary-nav-bar">
       <span>Pranjal Srivastava</span>
       <nav id="nav" class="navbar">
-        <a href="#home" class="link-primary" onclick="openPage('home','nav-home')">Home</a>
-        <a href="#secondary-nav-bar" id="nav-about" class="link-primary active" onclick="openPage('about',id)">About</a>
-        <a href="#secondary-nav-bar" id="nav-projects" class="link-primary" onclick="openPage('projects',id)">Projects</a>
-        <a href="#secondary-nav-bar" id="nav-resume" class="link-primary" onclick="openPage('resume',id)">Resume</a>
-        <a href="#secondary-nav-bar" id="nav-contact" class="link-primary" onclick="openPage('contact',id)">Contact</a>
+        <a class="link-primary" onclick="openPage('home','nav-home')">Home</a>
+        <a
+          id="nav-about"
+          class="link-primary active"
+          onclick="openPage('about',id)"
+          >About</a
+        >
+        <a
+          id="nav-projects"
+          class="link-primary"
+          onclick="openPage('projects',id)"
+          >Projects</a
+        >
+        <a id="nav-resume" class="link-primary" onclick="openPage('resume',id)"
+          >Resume</a
+        >
+        <a
+          id="nav-contact"
+          class="link-primary"
+          onclick="openPage('contact',id)"
+          >Contact</a
+        >
       </nav>
     </div>
     <section id="about" class="section about">
@@ -82,31 +119,90 @@
       <h1>LEARN MORE ABOUT ME</h1>
       <div class="about-me">
         <div class="pic-container">
-        <img width="100%" height="100%" src="https://media-exp1.licdn.com/dms/image/C4E03AQFDMbzP9OuaAw/profile-displayphoto-shrink_400_400/0/1599844793149?e=1631145600&amp;v=beta&amp;t=Jb0mozO8imimqCsumFVdxynTLY1IP7NOvP_lq0AE9V0" alt="Pranjal Srivastava">
+          <img
+            width="100%"
+            height="100%"
+            src="images/portfolio-pic-2.jpg"
+            alt="Pranjal Srivastava"
+          />
         </div>
         <div class="basic-information">
           <h1 class="about-title">Web Developer</h1>
-          <p>Seeking a position to utilize my skills and abilities in the Information Technology Industry that offers
-            professional growth while being resourceful, innovative and flexible.</p>
+          <p>
+            Seeking a position to utilize my skills and abilities in the
+            Information Technology Industry that offers professional growth
+            while being resourceful, innovative and flexible.
+          </p>
           <div class="personal-info-box">
             <div class="personal-info-box-1">
               <ul class="list-non-bullets">
-                <li><span class="arrow">></span><strong> &nbsp;<span class="info-title">Birthday :</span>&nbsp;</strong> 11 May 2000</li>
-                <li><span class="arrow">></span><strong> &nbsp;<span class="info-title">Website :</span>&nbsp;</strong> www.srv-pranjal.netlify.app</li>
-                <li><span class="arrow">></span><strong> &nbsp;<span class="info-title">Phone :</span>&nbsp;</strong> +91 9454501112</li>
-                <li><span class="arrow">></span><strong> &nbsp;<span class="info-title">City :</span>&nbsp;</strong> Lucknow,India</li>
+                <li>
+                  <span class="arrow">></span
+                  ><strong>
+                    &nbsp;<span class="info-title">Birthday :</span
+                    >&nbsp;</strong
+                  >
+                  11 May 2000
+                </li>
+                <li>
+                  <span class="arrow">></span
+                  ><strong>
+                    &nbsp;<span class="info-title">Website :</span
+                    >&nbsp;</strong
+                  >
+                  www.srvpranjal.netlify.app
+                </li>
+                <li>
+                  <span class="arrow">></span
+                  ><strong>
+                    &nbsp;<span class="info-title">Phone :</span>&nbsp;</strong
+                  >
+                  +91 9454501112
+                </li>
+                <li>
+                  <span class="arrow">></span
+                  ><strong>
+                    &nbsp;<span class="info-title">City :</span>&nbsp;</strong
+                  >
+                  Lucknow,India
+                </li>
               </ul>
             </div>
             <div class="personal-info-box-2">
               <ul class="list-non-bullets">
-                <li><span class="arrow">></span><strong> &nbsp;<span class="info-title">Age :</span>&nbsp;</strong> 21</li>
-                <li><span class="arrow">></span><strong> &nbsp;<span class="info-title">Degree :</span>&nbsp;</strong> B. Tech</li>
-                <li><span class="arrow">></span><strong> &nbsp;<span class="info-title">Email :</span>&nbsp;</strong> prns366@gmail.com</li>
-                <li><span class="arrow">></span><strong> &nbsp;<span class="info-title">Freelance :</span>&nbsp;</strong> Available</li>
+                <li>
+                  <span class="arrow">></span
+                  ><strong>
+                    &nbsp;<span class="info-title">Age :</span>&nbsp;</strong
+                  >
+                  21
+                </li>
+                <li>
+                  <span class="arrow">></span
+                  ><strong>
+                    &nbsp;<span class="info-title">Degree :</span>&nbsp;</strong
+                  >
+                  B. Tech
+                </li>
+                <li>
+                  <span class="arrow">></span
+                  ><strong>
+                    &nbsp;<span class="info-title">Email :</span>&nbsp;</strong
+                  >
+                  prns366@gmail.com
+                </li>
+                <li>
+                  <span class="arrow">></span
+                  ><strong>
+                    &nbsp;<span class="info-title">Freelance :</span
+                    >&nbsp;</strong
+                  >
+                  Available
+                </li>
               </ul>
             </div>
           </div>
-      </div>
+        </div>
       </div>
       <div class="skills">
         <h4 class="section-title">S K I L L S</h4>
@@ -114,121 +210,187 @@
           <div class="skill-set-1">
             <div class="skill-progress">
               <span>C/C++</span>
-              <span style="float: right;">90%</span>
-              <div class="progress-bar"><div class="progress cplusplus"></div></div>
+              <span style="float: right">90%</span>
+              <div class="progress-bar">
+                <div class="progress cplusplus"></div>
+              </div>
             </div>
             <div class="skill-progress">
               <span>PYTHON</span>
-              <span style="float: right;">75%</span>
-              <div class="progress-bar"><div class="progress python"></div></div>
+              <span style="float: right">75%</span>
+              <div class="progress-bar">
+                <div class="progress python"></div>
+              </div>
             </div>
             <div class="skill-progress">
               <span>JAVA</span>
-              <span style="float: right;">90%</span>
-              <div class="progress-bar"><div class="progress cplusplus"></div></div>
+              <span style="float: right">90%</span>
+              <div class="progress-bar">
+                <div class="progress cplusplus"></div>
+              </div>
             </div>
             <div class="skill-progress">
               <span>ROBOTIC PROCESS AUTOMATION</span>
-              <span style="float: right;">70%</span>
+              <span style="float: right">70%</span>
               <div class="progress-bar"><div class="progress rpa"></div></div>
             </div>
           </div>
           <div class="skill-set-2">
             <div class="skill-progress">
               <span>HTML/CSS</span>
-              <span style="float: right;">90%</span>
-              <div class="progress-bar"><div class="progress cplusplus"></div></div>
+              <span style="float: right">90%</span>
+              <div class="progress-bar">
+                <div class="progress cplusplus"></div>
+              </div>
             </div>
             <div class="skill-progress">
               <span>JAVASCRIPT</span>
-              <span style="float: right;">80%</span>
+              <span style="float: right">80%</span>
               <div class="progress-bar"><div class="progress js"></div></div>
             </div>
             <div class="skill-progress">
               <span>REACTJS</span>
-              <span style="float: right;">75%</span>
-              <div class="progress-bar"><div class="progress python"></div></div>
+              <span style="float: right">75%</span>
+              <div class="progress-bar">
+                <div class="progress python"></div>
+              </div>
             </div>
             <div class="skill-progress">
               <span>MYSQL</span>
-              <span style="float: right;">90%</span>
-              <div class="progress-bar"><div class="progress cplusplus"></div></div>
+              <span style="float: right">90%</span>
+              <div class="progress-bar">
+                <div class="progress cplusplus"></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    
-    <section  id="mobile-nav" class="section mobile-nav">
+
+    <section id="mobile-nav" class="section mobile-nav">
       <nav class="navbar">
-        <a href="#home" id="mobile-nav-home" class="link-primary active" onclick="openPage('home',id)">Home</a>
-        <a href="#secondary-nav-bar" id="mobile-nav-about" class="link-primary" onclick="openPage('about',id)">About</a>
-        <a href="#secondary-nav-bar" id="mobile-nav-projects" class="link-primary" onclick="openPage('projects',id)">Projects</a>
-        <a href="#secondary-nav-bar" id="mobile-nav-resume" class="link-primary" onclick="openPage('resume',id)">Resume</a>
-        <a href="#secondary-nav-bar" id="mobile-nav-contact" class="link-primary" onclick="openPage('contact',id)">Contact</a>
+        <a
+          id="mobile-nav-home"
+          class="link-primary active"
+          onclick="openPage('home',id)"
+          >Home</a
+        >
+        <a
+          id="mobile-nav-about"
+          class="link-primary"
+          onclick="openPage('about',id)"
+          >About</a
+        >
+        <a
+          id="mobile-nav-projects"
+          class="link-primary"
+          onclick="openPage('projects',id)"
+          >Projects</a
+        >
+        <a
+          id="mobile-nav-resume"
+          class="link-primary"
+          onclick="openPage('resume',id)"
+          >Resume</a
+        >
+        <a
+          id="mobile-nav-contact"
+          class="link-primary"
+          onclick="openPage('contact',id)"
+          >Contact</a
+        >
       </nav>
     </section>
     <section id="resume" class="section resume">
       <h4 class="section-title">R E S U M E</h4>
       <h1>CHECK MY RESUME</h1>
       <div class="resume-items-container">
-        <div class="resume-item">
+        <div class="resume-item left-block left-block">
           <h2 class="resume-content-title">Summary</h2>
-        <div class="resume-content-box">
-          <h3 class="content-box-title">Pranjal Srivastava</h3>
-          <p>Front End Developer || Competitive Programmer || RPA Developer</p>
-          <ul>
-            <li>Lucknow, INDIA</li>
-            <li>+91 9454501112</li>
-            <li>prns366@gmail.com</li>
-          </ul>
+          <div class="resume-content-box">
+            <h3 class="content-box-title">Pranjal Srivastava</h3>
+            <p>
+              Front End Developer || Competitive Programmer || RPA Developer
+            </p>
+            <ul>
+              <li>Lucknow, INDIA</li>
+              <li>+91 9454501112</li>
+              <li>prns366@gmail.com</li>
+            </ul>
+          </div>
+          <h2 class="resume-content-title">Education</h2>
+          <div class="resume-content-box">
+            <h3 class="content-box-title">
+              B. Tech, School of Computer Engineering
+            </h3>
+            <p class="duration">07/2018 - Present</p>
+            <p>
+              KIIT Deemed University,
+              Bhubaneswar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9.19
+              CGPA
+            </p>
+          </div>
+          <div class="resume-content-box">
+            <h3 class="content-box-title">Senior Secondary (ICSE), Science</h3>
+            <p class="duration">04/2016 - 04/2018</p>
+            <p>
+              St. Dominic Savio College,
+              Lucknow&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;90.4%
+            </p>
+          </div>
+          <div class="resume-content-box">
+            <h3 class="content-box-title">Secondary School</h3>
+            <p class="duration">04/2014 - 04/2016</p>
+            <p>
+              St. Dominic Savio College,
+              Lucknow&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;90.6%
+            </p>
+          </div>
         </div>
-        <h2 class="resume-content-title">Education</h2>
-        <div class="resume-content-box">
-          <h3 class="content-box-title">B. Tech, School of Computer Engineering</h3>
-          <p class="duration">07/2018 - Present</p>
-          <p>KIIT Deemed University, Bhubaneswar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9.19 CGPA</p>
-        </div>
-        <div class="resume-content-box">
-          <h3 class="content-box-title">Senior Secondary (ICSE), Science</h3>
-          <p class="duration">04/2016 - 04/2018</p>
-          <p>St. Dominic Savio College, Lucknow&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;90.4%</p>
-        </div>
-        <div class="resume-content-box">
-          <h3 class="content-box-title">Secondary School</h3>
-          <p class="duration">04/2014 - 04/2016</p>
-          <p>St. Dominic Savio College, Lucknow&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;90.6%</p>
-        </div>
-      </div>
 
-      <div class="resume-item">
-        <h2 class="resume-content-title">Professional Experience</h2>
-        <div class="resume-content-box">
-          <h3 class="content-box-title">H2H Intern</h3>
-          <p class="duration">01/2021 - 03/2021</p>
-          <p>HighRadius Corp.</p>
+        <div class="resume-item right-block">
+          <h2 class="resume-content-title">Professional Experience</h2>
+          <div class="resume-content-box">
+            <h3 class="content-box-title">H2H Intern</h3>
+            <p class="duration">01/2021 - 03/2021</p>
+            <p>HighRadius Corp.</p>
+          </div>
+          <div class="resume-content-box">
+            <h3 class="content-box-title">RPA Development Intern</h3>
+            <p class="duration">10/2020 - 01/2021</p>
+            <p>SmartMegh Solutions Pvt. Ltd.</p>
+          </div>
+          <h2 class="resume-content-title">Training & Certifications</h2>
+          <div class="resume-content-box">
+            <h3 class="content-box-title">
+              Mastering Data Structures and Algorithms
+            </h3>
+            <p>
+              Online Course offered by UDEMY which covered all the basics topics
+              of Data Structures.
+            </p>
+          </div>
+          <div class="resume-content-box">
+            <h3 class="content-box-title">
+              The Complete Web Developer Course 2.0
+            </h3>
+            <p>
+              Online course offered by UDEMY that covers all the basics of Web
+              Development including HTML, CSS, Javascript, JQuery, Bootstrap 4,
+              PHP and MySQL databases.
+            </p>
+          </div>
+          <div class="resume-content-box">
+            <h3 class="content-box-title">Hackerrank Certifications</h3>
+            <p>
+              Checkout my Hackerrank Certifications 👉 &nbsp;<a
+                href="https://www.hackerrank.com/prns366"
+                onclick='window.open("https://www.hackerrank.com/prns366");return false;'
+                >Here
+              </a>
+            </p>
+          </div>
         </div>
-        <div class="resume-content-box">
-          <h3 class="content-box-title">RPA Development Intern</h3>
-          <p class="duration">10/2020 - 01/2021</p>
-          <p>SmartMegh Solutions Pvt. Ltd.</p>
-        </div>
-        <h2 class="resume-content-title">Training & Certifications</h2>
-        <div class="resume-content-box">
-          <h3 class="content-box-title">Mastering Data Structures and Algorithms</h3>
-          <p>Online Course offered by UDEMY which covered all the basics topics of Data Structures.</p>
-        </div>
-        <div class="resume-content-box">
-          <h3 class="content-box-title">The Complete Web Developer Course 2.0</h3>
-          <p>Online course offered by UDEMY that covers all the basics of Web Development including
-            HTML, CSS, Javascript, JQuery, Bootstrap 4, PHP and MySQL databases.</p>
-        </div>
-        <div class="resume-content-box">
-          <h3 class="content-box-title">Hackerrank Certifications</h3>
-          <p>Checkout my Hackerrank Certifications 👉 &nbsp;<a href="https://www.hackerrank.com/prns366" onclick='window.open("https://www.hackerrank.com/prns366");return false;'>Here </a>
-          </p>
-        </div>
-    </div>
       </div>
     </section>
 
@@ -237,19 +399,19 @@
       <h4 class="section-title">C O N T A C T</h4>
       <h1>CONTACT ME</h1>
       <div class="contact-items">
-        <div class="contact-item">
+        <div class="contact-item left-block">
           <div class="contact-content-box">
             <div class="icon"><i class="fa fa-map-marker"></i></div>
             <h3>My Address</h3>
             <p>Gomti Nagar, Lucknow</p>
           </div>
-            <div class="contact-content-box">
-              <div class="icon"><i class="fa fa-envelope-o"></i></div>
-              <h3>Email Me</h3>
-              <p>prns366@gmail.com</p>
-            </div>
+          <div class="contact-content-box">
+            <div class="icon"><i class="fa fa-envelope-o"></i></div>
+            <h3>Email</h3>
+            <p>prns366@gmail.com</p>
+          </div>
         </div>
-        <div class="contact-item">
+        <div class="contact-item right-block">
           <div class="contact-content-box">
             <div class="icon"><i class="fa fa-share-alt"></i></div>
             <h3>Social Profiles</h3>
@@ -273,25 +435,51 @@
           </div>
           <div class="contact-content-box">
             <div class="icon"><i class="fa fa-phone"></i></div>
-            <h3>Call Me</h3>
+            <h3>Call</h3>
             <p>+91 9454501112</p>
           </div>
         </div>
       </div>
 
       <div class="contact-content-box form">
-        <form action="/" method="post">
+        <form id="form">
           <div class="user-details">
-              <input type="text" class="form-text" name="name" id="name" placeholder="Your Name" required>
-              <input type="email" class="form-text" name="email" id="email" placeholder="Your Email" required>
+            <input
+              type="text"
+              class="form-text"
+              name="name"
+              id="name"
+              placeholder="Your Name"
+              required
+            />
+            <input
+              type="email"
+              class="form-text"
+              name="email"
+              id="email"
+              placeholder="Your Email"
+              required
+            />
           </div>
-          <input type="text" class="form-text" name="subject" id="subject" placeholder="Subject" required>
-          <textarea class="form-text" name="message" rows="5" placeholder="Message" required></textarea>
+          <input
+            type="text"
+            class="form-text"
+            name="subject"
+            id="subject"
+            placeholder="Subject"
+            required
+          />
+          <textarea
+            class="form-text"
+            name="message"
+            rows="5"
+            placeholder="Message"
+            required
+          ></textarea>
           <!-- <button type="submit">Submit</button> -->
           <span class="submit">Submit</span>
         </form>
       </div>
-      
     </section>
   </body>
 </html>

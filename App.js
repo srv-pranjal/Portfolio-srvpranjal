@@ -1,8 +1,10 @@
-function openPage(pageId,navId) {
+function openPage(pageId, navId) {
   handlePages(pageId);
   makeActive(navId);
+  burgerButton = document.querySelector(".fa-times");
+  burgerButton.classList.remove("fa-times");
+  burgerButton.classList.add("fa-bars");
 }
-
 
 function openMobileNav() {
   var x = document.querySelector("#mobile-nav");
@@ -10,13 +12,19 @@ function openMobileNav() {
   var currPageId = currNavId.innerHTML.toLowerCase();
   if (x.style.display === "flex") {
     x.style.display = "none";
+    burgerButton = document.querySelector(".fa-times");
+    burgerButton.classList.remove("fa-times");
+    burgerButton.classList.add("fa-bars");
     handlePages(currPageId);
   } else {
     x.style.display = "flex";
-  document.querySelector("#home").style.display = "none";
-  document.querySelector("#about").style.display = "none";
-  document.querySelector("#resume").style.display = "none";
-  document.querySelector("#contact").style.display = "none";
+    burgerButton = document.querySelector(".fa-bars");
+    burgerButton.classList.remove("fa-bars");
+    burgerButton.classList.add("fa-times");
+    document.querySelector("#home").style.display = "none";
+    document.querySelector("#about").style.display = "none";
+    document.querySelector("#resume").style.display = "none";
+    document.querySelector("#contact").style.display = "none";
   }
 }
 
@@ -45,6 +53,11 @@ function handlePages(pageID) {
     document.getElementById("secondary-nav-bar").style.display = "flex";
     document.getElementById(pageID).style.display = "block";
   }
+}
+
+function onSubmit() {
+  document.querySelector("#form").submit();
+  console.log("form submitted");
 }
 
 const scrollto = (el) => {
