@@ -59,11 +59,14 @@
         <a class="link-primary" onclick="openPage('about','nav-about')"
           >About</a
         >
+        <a class="link-primary" onclick="openPage('resume','nav-resume')"
+          >Resume</a
+        >
         <a class="link-primary" onclick="openPage('projects','nav-projects')"
           >Projects</a
         >
-        <a class="link-primary" onclick="openPage('resume','nav-resume')"
-          >Resume</a
+        <a class="link-primary" onclick="openPage('blogs','nav-blogs')"
+          >Blogs</a
         >
         <a class="link-primary" onclick="openPage('contact','nav-contact')"
           >Contact</a
@@ -97,14 +100,17 @@
           onclick="openPage('about',id)"
           >About</a
         >
+        <a id="nav-resume" class="link-primary" onclick="openPage('resume',id)"
+          >Resume</a
+        >
         <a
           id="nav-projects"
           class="link-primary"
           onclick="openPage('projects',id)"
           >Projects</a
         >
-        <a id="nav-resume" class="link-primary" onclick="openPage('resume',id)"
-          >Resume</a
+        <a id="nav-blogs" class="link-primary" onclick="openPage('blogs',id)"
+          >Blogs</a
         >
         <a
           id="nav-contact"
@@ -282,16 +288,22 @@
           >About</a
         >
         <a
+          id="mobile-nav-resume"
+          class="link-primary"
+          onclick="openPage('resume',id)"
+          >Resume</a
+        >
+        <a
           id="mobile-nav-projects"
           class="link-primary"
           onclick="openPage('projects',id)"
           >Projects</a
         >
         <a
-          id="mobile-nav-resume"
+          id="mobile-nav-blogs"
           class="link-primary"
-          onclick="openPage('resume',id)"
-          >Resume</a
+          onclick="openPage('blogs',id)"
+          >Blogs</a
         >
         <a
           id="mobile-nav-contact"
@@ -394,7 +406,132 @@
       </div>
     </section>
 
-    <section id="projects"></section>
+    <section id="projects" class="projects section">
+      <h4 class="section-title">P R O J E C T S</h4>
+      <h1>CHECK OUT MY PROJECTS</h1>
+      <div class="projects-container">
+        <div class="projects-column left-block">
+          <div class="project">
+            <h2 class="project-title">Project Title</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit vero
+              saepe a dolorum, corporis quos. Nisi cupiditate perferendis
+              laborum illo dolor saepe laboriosam deserunt eveniet totam earum,
+              accusantium eaque sint.
+            </p>
+            <div class="view-project">
+              <h4>View Live</h4>
+              <h4
+                onclick='window.open("https://github.com/srv-pranjal/To-do-App");return false;'
+              >
+                View Source Code
+              </h4>
+            </div>
+          </div>
+          <div class="project">
+            <h2 class="project-title">Project Title</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit vero
+              saepe a dolorum, corporis quos. Nisi cupiditate perferendis
+              laborum illo dolor saepe laboriosam deserunt eveniet totam earum,
+              accusantium eaque sint.
+            </p>
+            <div class="view-project">
+              <h4>View Live</h4>
+              <h4>View Source Code</h4>
+            </div>
+          </div>
+        </div>
+        <div class="projects-column right-block">
+          <div class="project">
+            <h2 class="project-title">Project Title</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit vero
+              saepe a dolorum, corporis quos. Nisi cupiditate perferendis
+              laborum illo dolor saepe laboriosam deserunt eveniet totam earum,
+              accusantium eaque sint.
+            </p>
+            <div class="view-project">
+              <h4>View Live</h4>
+              <h4>View Source Code</h4>
+            </div>
+          </div>
+          <div class="project">
+            <h2 class="project-title">Project Title</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit vero
+              saepe a dolorum, corporis quos. Nisi cupiditate perferendis
+              laborum illo dolor saepe laboriosam deserunt eveniet totam earum,
+              accusantium eaque sint.
+            </p>
+            <div class="view-project">
+              <h4>View Live</h4>
+              <h4>View Source Code</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="blogs" class="section blogs">
+      <h4 class="section-title">B L O G S</h4>
+      <h1>CHECK OUT MY BLOGS</h1>
+      <div class="blogs-container">
+        <div class="blogs-column left-block">
+          <div class="blog">
+            <h2 class="blog-title">Blog Title</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit vero
+              saepe a dolorum, corporis quos. Nisi cupiditate perferendis
+              laborum illo dolor saepe laboriosam deserunt eveniet totam earum,
+              accusantium eaque sint.
+            </p>
+            <div class="view-blog">
+              <h4>Read Now</h4>
+            </div>
+          </div>
+          <div class="blog">
+            <h2 class="blog-title">Blog Title</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit vero
+              saepe a dolorum, corporis quos. Nisi cupiditate perferendis
+              laborum illo dolor saepe laboriosam deserunt eveniet totam earum,
+              accusantium eaque sint.
+            </p>
+            <div class="view-blog">
+              <h4>Read Now</h4>
+            </div>
+          </div>
+        </div>
+        <div class="blogs-column right-block">
+          <div class="blog">
+            <h2 class="blog-title">Blog Title</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit vero
+              saepe a dolorum, corporis quos. Nisi cupiditate perferendis
+              laborum illo dolor saepe laboriosam deserunt eveniet totam earum,
+              accusantium eaque sint.
+            </p>
+            <div class="view-blog">
+              <h4>Read Now</h4>
+            </div>
+          </div>
+          <div class="blog">
+            <h2 class="blog-title">Blog Title</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit vero
+              saepe a dolorum, corporis quos. Nisi cupiditate perferendis
+              laborum illo dolor saepe laboriosam deserunt eveniet totam earum,
+              accusantium eaque sint.
+            </p>
+            <div class="view-blog">
+              <h4>Read Now</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="contact" class="contact section">
       <h4 class="section-title">C O N T A C T</h4>
       <h1>CONTACT ME</h1>
@@ -435,7 +572,7 @@
           </div>
           <div class="contact-content-box">
             <div class="icon"><i class="fa fa-phone"></i></div>
-            <h3>Call</h3>
+            <h3>Phone</h3>
             <p>+91 9454501112</p>
           </div>
         </div>

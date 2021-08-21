@@ -24,6 +24,8 @@ function openMobileNav() {
     document.querySelector("#home").style.display = "none";
     document.querySelector("#about").style.display = "none";
     document.querySelector("#resume").style.display = "none";
+    document.querySelector("#projects").style.display = "none";
+    document.querySelector("#blogs").style.display = "none";
     document.querySelector("#contact").style.display = "none";
   }
 }
@@ -41,16 +43,18 @@ function makeActive(navID) {
 }
 
 function handlePages(pageID) {
-  document.getElementById("home").style.display = "none";
-  document.getElementById("about").style.display = "none";
-  document.getElementById("resume").style.display = "none";
-  document.getElementById("contact").style.display = "none";
-  document.getElementById("mobile-nav").style.display = "none";
+  document.querySelector("#home").style.display = "none";
+  document.querySelector("#about").style.display = "none";
+  document.querySelector("#resume").style.display = "none";
+  document.querySelector("#projects").style.display = "none";
+  document.querySelector("#blogs").style.display = "none";
+  document.querySelector("#contact").style.display = "none";
+  document.querySelector("#mobile-nav").style.display = "none";
   if (pageID == "home") {
-    document.getElementById("secondary-nav-bar").style.display = "none";
+    document.querySelector("#secondary-nav-bar").style.display = "none";
     document.getElementById(pageID).style.display = "flex";
   } else {
-    document.getElementById("secondary-nav-bar").style.display = "flex";
+    document.querySelector("#secondary-nav-bar").style.display = "flex";
     document.getElementById(pageID).style.display = "block";
   }
 }
@@ -66,3 +70,9 @@ const scrollto = (el) => {
     behavior: "smooth",
   });
 };
+
+function animateSkills() {
+  var element = document.querySelector(".cplusplus");
+  console.log(element);
+  element.style.backgroundColor = "red";
+}
