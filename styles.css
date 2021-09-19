@@ -138,6 +138,9 @@ a {
 .fa-github {
   color: var(--github-clr);
 }
+.fa-hackerrank {
+  color: #00e261;
+}
 
 /* <----------Header---------> */
 
@@ -281,14 +284,16 @@ a {
 .about-me {
   padding: 2rem 0;
   display: flex;
+  flex-direction: column;
   transition: ease-out 1s;
   justify-content: space-between;
 }
 .pic-container {
-  width: 30%;
-  height: 30%;
   position: relative;
   animation: fade-left 1.5s;
+  width: 40%;
+  height: 40%;
+  margin: 2rem auto;
 }
 
 @keyframes fade-left {
@@ -325,7 +330,6 @@ a {
 }
 .basic-information {
   padding: 0 2rem;
-  width: 64%;
   background-color: black;
   position: relative;
   animation: fade-right 1.5s;
@@ -454,11 +458,6 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .about-me .pic-container {
-    width: 50%;
-    height: 50%;
-    margin: 2rem 0;
   }
   .basic-information {
     width: 90%;
