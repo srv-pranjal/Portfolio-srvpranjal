@@ -811,7 +811,6 @@ a {
   margin: auto;
   margin-bottom: 2rem;
   padding: 1.5rem;
-  /* min-height: 160px; */
 }
 .project .project-title {
   margin-bottom: 1rem;
@@ -871,7 +870,6 @@ a {
   margin: auto;
   margin-bottom: 2rem;
   padding: 1.5rem;
-  min-height: 160px;
 }
 .blog .blog-title {
   margin-bottom: 1rem;
