@@ -182,7 +182,7 @@ a {
   margin-bottom: 2rem;
   height: 100%;
   background-color: rgba(0, 32, 49, 0.9);
-  width: 84vw;
+  width: 75vw;
   display: none;
   transition: ease-in-out 1s;
 }
@@ -567,13 +567,12 @@ a {
 }
 .resume-items-container .resume-item {
   position: relative;
-  width: 50%;
 }
 .left-block {
-  animation: fade-left 1.5s;
+  animation: fade-left 1s;
 }
 .right-block {
-  animation: fade-right 1.5s;
+  animation: fade-right 1s;
 }
 .resume .resume-content-box {
   padding: 0 1.5rem;
@@ -802,7 +801,7 @@ a {
   margin: 1rem 0 2rem 0;
 }
 .projects-container .projects-column {
-  width: 60%;
+  width: 70%;
   position: relative;
   margin: auto;
 }
@@ -831,6 +830,9 @@ a {
   background-color: var(--primary-portfolio-clr);
   color: #000;
   font-size: 1.1rem;
+}
+.project p, .blog p{
+  line-height: 1.75;
 }
 
 @media (max-width: 830px) {
@@ -861,7 +863,7 @@ a {
   margin: 1rem 0 2rem 0;
 }
 .blogs-container .blogs-column {
-  width: 60%;
+  width: 70%;
   position: relative;
   margin: auto;
 }

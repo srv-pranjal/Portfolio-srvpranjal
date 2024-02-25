@@ -7,6 +7,8 @@ const contactPage = document.querySelector("#contact");
 const mobileNavBar = document.querySelector("#mobile-nav");
 const secondaryNavBar = document.querySelector("#secondary-nav-bar");
 const navElements = document.querySelectorAll(".link-primary");
+const ageElement = document.querySelector("#age");
+ageElement.innerText = getAge("2000/05/11");
 
 function openPage(pageId, navId) {
   handlePages(pageId);
@@ -80,3 +82,14 @@ const scrollto = () => {
     behavior: "smooth",
   });
 };
+
+function getAge(dateString) {
+  var today = new Date();
+  var birthDate = new Date(dateString);
+  var age = today.getFullYear() - birthDate.getFullYear();
+  var m = today.getMonth() - birthDate.getMonth();
+  if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+  return age;
+}
